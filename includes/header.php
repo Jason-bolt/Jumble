@@ -16,7 +16,7 @@
 	body{
 		background-image: url('includes/img/background1.jpg');
 		background-size: 100%;
-		background-repeat: no-repeat;
+		/*background-repeat: no-repeat;*/
 	}
 </style>
 
