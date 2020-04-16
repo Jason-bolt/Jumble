@@ -5,9 +5,9 @@
 	
     $shuffled_word = $_SESSION['shuffled_word'];
 
-	// if (!isset($shuffled_word)) {
-	// 	redirect_to('index.php');
-	// }
+	if (!isset($shuffled_word)) {
+		redirect_to('index.php');
+	}
 	include('includes/header.php');
 
 	$answer = $_SESSION['answer'];
