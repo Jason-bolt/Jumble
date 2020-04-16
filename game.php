@@ -34,15 +34,15 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
-            <p class="card-title text-center" style="font-size: 70px;"><?php echo $shuffled_word; ?></p>
+            <p class="card-title text-center" style="font-size: 70px; margin-bottom: 0;"><?php echo $shuffled_word; ?></p>
             <form class="form-signin text-center" action="check.php" method="GET">
-              <div class="form-label-group">
+              <div class="form-p-group">
 
               	<?php
               	// CORRECT ANSWER
               		if (isset($answer) && $answer == "correct") {
               	?>
-					<label style="color: #11E811; font-size: 20px;"><?php echo $_SESSION['current_word']; ?></label>
+					<p style="color: #11E811; font-size: 20px;"><?php echo $_SESSION['current_word']; ?></p>
 
 					</div>
 					<a href="index.php" class="btn btn-primary text-center" style="width: 100px; margin-top: 10px">Next</a>
@@ -50,11 +50,11 @@
               	// WRONG ANSWER
               		}elseif(isset($answer) && $answer == "wrong"){
               	?>
-              		<label style="color: #F91620;"><?php echo $_SESSION['wrong_word']; ?></label>
+              		<p style="color: #F91620; margin: 0 auto;"><?php echo $_SESSION['wrong_word']; ?></p>
 
               		<br />
 
-              		<label style="color: #11E811; font-size: 20px;"><?php echo $_SESSION['current_word']; ?></label>
+              		<p style="color: #11E811; font-size: 20px; margin: 0 auto 5px auto;"><?php echo $_SESSION['current_word']; ?></p>
 
 					</div>
 					<a href="index.php" class="btn btn-primary text-center" style="width: 100px; margin-top: 10px">Next</a>
